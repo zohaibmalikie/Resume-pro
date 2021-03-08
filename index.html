@@ -1,13 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>MyResume</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
   </head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .justify-Center{
+    justify-content: center;
+  }
+  .justify-Around{
+    justify-content: space-around;
+  }
+  .justify-Between{
+    justify-content: space-between;
+  }
+  .m-auto{
+    margin: auto;
+  }
+  .ml-auto{
+    margin-left: auto;
+  }
+  .center_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .pxt-1{
+    padding-top: 1px;
+  }
+  .pxt-2{
+    padding-top: 2px;
+  }
+  .pxt-3{
+    padding-top: 3px;
+  }
+  .pxt-4{
+    padding-top: 4px;
+  }
+  .pxt-5{
+    padding-top: 5px;
+  }
+  .pxt-6{
+    padding-top: 6px;
+  }
+  .pxt-7{
+    padding-top: 7px;
+  }
+  .pxt-8{
+    padding-top: 8px;
+  }
+  .pxt-9{
+    padding-top: 9px;
+  }
+  .pxt-10{
+    padding-top: 10px;
+  }
+  .pxt-11{
+    padding-top: 11px;
+  }
+  .pxt-12{
+    padding-top: 12px;
+  }
+  .pxt-13{
+    padding-top: 13px;
+  }
+  .pxt-14{
+    padding-top: 14px;
+  }
+  .pxt-15{
+    padding-top: 15px;
+  }
+  .pxt-16{
+    padding-top: 16px;
+  }
+  .pxt-17{
+    padding-top: 17px;
+  }
+
+  .pxt-18{
+    padding-top: 18px;
+  }
+  .pxt-19{
+    padding-top: 19px;
+  }
+  .pxt-20{
+    padding-top: 20px;
+  }
+  .pxt-21{
+    padding-top: 21px;
+  }
+  .pxt-22{
+    padding-top: 22px;
+  }
+  .pxt-23{
+    padding-top: 23px;
+  }
+  .pxt-24{
+    padding-top: 24px;
+  }
+  .pxt-25{
+    padding-top: 25px;
+  }
+  .pxb-1{
+    padding-left: 1px;
+  }
+  .pxb-2{
+    padding-left: 1px;
+  }
+  .pxb-3{
+    padding-left: 2px;
+  }
+  .pxb-4{
+    padding-left: 3px;
+  }
+  .pxb-5{
+    padding-left: 4px;
+  }
+  .pxb-6{
+    padding-left: 5px;
+  }
+  .pxb-7{
+    padding-left: 6px;
+  }
+  .pxb-8{
+    padding-left: 7px;
+  }
+  .pxb-9{
+    padding-left: 8px;
+  }
+  .pxb-10{
+    padding-left: 9px;
+  }
+  .pxb-11{
+    padding-left: 11px;
+  }
+  .pxb-12{
+    padding-left: 12px;
+  }
+  .pxb-13{
+    padding-left: 13px;
+  }
+  .pxb-15{
+    padding-left: 14px;
+  }
+ 
+  .pxb-16{
+    padding-left: 16px;
+  }
+  .pxb-17{
+    padding-left: 17px;
+  }
+  .pxb-18{
+    padding-left: 18px;
+  }
+
+  .pxb-19{
+    padding-left: 19px;
+  }
+  .pxb-20{
+    padding-left: 20px;
+  }
+  .pxb-21{
+    padding-left: 21px;
+  }
+  .pxb-22{
+    padding-left: 22px;
+  }
+  .pxb-23{
+    padding-left: 23px;
+  }
+  .pxb-24{
+    padding-left: 24px;
+  }
+  .pxb-25{
+    padding-left: 25px;
+  }
+  .pxl-1{
+    padding-left: 1px;
+  }
+  .pxl-2{
+    padding-left: 1px;
+  }
+  .pxl-3{
+    padding-left: 2px;
+  }
+  .pxl-4{
+    padding-left: 3px;
+  }
+  .pxl-5{
+    padding-left: 4px;
+  }
+  .pxl-6{
+    padding-left: 5px;
+  }
+  .pxl-7{
+    padding-left: 6px;
+  }
+  .pxl-8{
+    padding-left: 7px;
+  }
+  .pxl-9{
+    padding-left: 8px;
+  }
+  .pxl-10{
+    padding-left: 9px;
+  }
+  .pxl-11{
+    padding-left: 11px;
+  }
+  .pxl-12{
+    padding-left: 12px;
+  }
+  .pxl-13{
+    padding-left: 13px;
+  }
+  .pxl-15{
+    padding-left: 14px;
+  }
+  .pxl-15{
+    padding-left: 15px;
+  }
+  .pxl-16{
+    padding-left: 16px;
+  }
+  .pxl-17{
+    padding-left: 17px;
+  }
+  .pxl-18{
+    padding-left: 18px;
+  }
+
+  .pxl-19{
+    padding-left: 19px;
+  }
+  .pxl-20{
+    padding-left: 20px;
+  }
+  .pxl-21{
+    padding-left: 21px;
+  }
+  .pxl-22{
+    padding-left: 22px;
+  }
+  .pxl-23{
+    padding-left: 23px;
+  }
+  .pxl-24{
+    padding-left: 24px;
+  }
+  .pxl-25{
+    padding-left: 25px;
+  }
+  .pxr-1{
+    padding-right: 1px;
+  }
+  .pxr-2{
+    padding-right: 1px;
+  }
+  .pxr-3{
+    padding-right: 2px;
+  }
+  .pxr-4{
+    padding-right: 3px;
+  }
+  .pxr-5{
+    padding-right: 4px;
+  }
+  .pxr-6{
+    padding-right: 5px;
+  }
+  .pxr-7{
+    padding-right: 6px;
+  }
+  .pxr-8{
+    padding-right: 7px;
+  }
+  .pxr-9{
+    padding-right: 8px;
+  }
+  .pxr-10{
+    padding-right: 9px;
+  }
+  .pxr-11{
+    padding-right: 11px;
+  }
+  .pxr-12{
+    padding-right: 12px;
+  }
+  .pxr-13{
+    padding-right: 13px;
+  }
+  .pxr-15{
+    padding-right: 14px;
+  }
+  .pxr-15{
+    padding-right: 15px;
+  }
+  .pxr-16{
+    padding-right: 16px;
+  }
+  .pxr-17{
+    padding-right: 17px;
+  }
+  .pxr-18{
+    padding-right: 18px;
+  }
+
+  .pxr-19{
+    padding-right: 19px;
+  }
+  .pxr-20{
+    padding-right: 20px;
+  }
+  .pxr-21{
+    padding-right: 21px;
+  }
+  .pxr-22{
+    padding-right: 22px;
+  }
+  .pxr-23{
+    padding-right: 23px;
+  }
+  .pxr-24{
+    padding-right: 24px;
+  }
+  .pxr-25{
+    padding-right: 25px;
+  }
+  .px-0{
+    padding: 0px;
+  }
+  .mx-0{
+    margin: 0px;
+  }
+  .p{
+    margin: 0px;
+    padding: 0px;
+  }
+
+</style>
   <body>
     <div style="padding-left: 40px; padding-right: 40px">
       <p>Resume</p>
